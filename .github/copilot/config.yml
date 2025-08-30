@@ -6,13 +6,23 @@ context:
     - path: .github/copilot/context-map.yml
       description: Comprehensive context and technical specifications for the repository
       priority: high
+    - path: .github/copilot/config.yml
+      description: Copilot configuration and settings
+      priority: high
+    - path: .github/**/*
+      description: All GitHub-related configuration files
+      priority: medium
 
 suggestions:
   include_files:
     - "src/**/*.{ts,tsx,js,jsx}"
+    - ".github/**/*"
   exclude_patterns:
     - "**/node_modules/**"
     - "**/.next/**"
+    - "**/.env*"
+    - "**/.env.local"
+    - "**/.env.*.local"
 
 style:
   code:
@@ -23,3 +33,7 @@ style:
       no_unused_vars: true
       no_explicit_any: true
       no_explicit_unknown: true
+
+initialization:
+  load_config: true
+  load_context: true
