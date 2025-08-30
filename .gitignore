@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# large media files
+.public/Local_Authority_Districts_(May_2025)_Boundaries_UK_BFC_(V2).shp
+.public/Local_Authority_Districts_(May_2025)_Boundaries_UK_BFC_(V2).dbf
