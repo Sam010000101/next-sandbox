@@ -1,0 +1,25 @@
+# GitHub Copilot Configuration
+version: 1.0
+
+context:
+  files:
+    - path: .github/copilot/context-map.yml
+      description: Comprehensive context and technical specifications for the repository
+      priority: high
+
+suggestions:
+  include_files:
+    - "src/**/*.{ts,tsx,js,jsx}"
+  exclude_patterns:
+    - "**/node_modules/**"
+    - "**/.next/**"
+
+style:
+  code:
+    typescript:
+      strict: true
+      prefer_const: true
+      max_line_length: 80
+      no_unused_vars: true
+      no_explicit_any: true
+      no_explicit_unknown: true

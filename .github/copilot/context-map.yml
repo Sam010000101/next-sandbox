@@ -1,0 +1,7 @@
+project_overview:
+  name: next-sandbox
+  description: A Next.js project showcasing various features and integrations, including D3.js visualizations
+  type: Next.js app router project
+  owner: Sam Brooke
+  goal: Experiment with D3.js visualizations and other data-driven features.
+  target_audience: Developers.
